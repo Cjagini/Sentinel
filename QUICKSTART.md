@@ -1,32 +1,6 @@
 # Sentinel - Quick Start Guide
 
-## 5-Minute Setup
-
-### 1. Install & Configure
-
-```bash
-cd sentinel
-npm install  # Already done in initial setup
-
-# Copy environment variables
-cp .env.local.example .env.local
-# Edit .env.local with your credentials
-```
-
-### 2. Database Setup
-
-```bash
-# Create PostgreSQL database
-createdb sentinel_db
-
-# Generate Prisma Client
-npx prisma generate
-
-# Run migrations
-npx prisma migrate dev
-```
-
-### 3. Start Services (3 Terminal Windows)
+### 1. Start Services (3 Terminal Windows)
 
 **Terminal 1 - Next.js Dev Server**:
 
@@ -254,32 +228,6 @@ sentinel/
 - Clear cache: `rm -rf .next node_modules/.prisma`
 - Reinstall: `npm install`
 - Generate Prisma: `npx prisma generate`
-
-## Next Steps
-
-1. ✅ **Project initialized** - You have all the core services
-2. ✅ **API routes created** - Ready for testing
-3. ✅ **Background worker setup** - Queue-based processing
-4. 🔲 **Build UI Dashboard** - Add Shadcn components
-5. 🔲 **Add Authentication** - NextAuth or similar
-6. 🔲 **Notification Integration** - Telegram/Email
-7. 🔲 **Deploy to Production** - Vercel or similar
-
-## Resume-Ready Code
-
-This project demonstrates:
-
-- ✅ Service-Repository Pattern (clean architecture)
-- ✅ TypeScript best practices
-- ✅ Async/await error handling
-- ✅ Database design (normalization, indexes)
-- ✅ Message queues (BullMQ/Redis)
-- ✅ Third-party API integration (OpenAI)
-- ✅ REST API design
-- ✅ Environment configuration
-- ✅ Comprehensive documentation
-
-Great for interviews and portfolios!
 
 ## Get Help
 
